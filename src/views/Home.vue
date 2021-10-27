@@ -1,14 +1,11 @@
 <template lang="pug">
 .vp-landing
-	site-header
+	h1 GLI APP | Project
 </template>
 
 <script>
 export default {
-  name: "Home",
-	components: {
-		'site-header': () => import('@/components/SiteHeader.vue')
-	}
+  name: "Home"
 };
 </script>
 

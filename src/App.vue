@@ -1,6 +1,5 @@
 <template lang="pug">
 #app
-  nav-bar
   transition(
     mode="out-in",
     enter-active-class="animate__animated animate__fadeIn",
@@ -10,11 +9,8 @@
 </template>
 
 <script>
-import NavBar from "@/components/NavBar.vue";
 export default {
-  components: {
-    NavBar,
-  },
+  components: {},
 };
 </script>
 
