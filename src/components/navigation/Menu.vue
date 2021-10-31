@@ -3,6 +3,7 @@ nav.list__nav--wrapper
   ul.list__nav--container
     menu-item(
       v-for="(item, index) in menus",
+      :key="item.id"
       :path="item.path",
       :text="item.path_name",
       :icon="item.icon"

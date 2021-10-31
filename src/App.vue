@@ -1,6 +1,7 @@
 <template lang="pug">
 #app
   v-sidebar
+  v-navbar
   .content
     .content__view
       transition(
@@ -12,10 +13,11 @@
 </template>
 
 <script>
-import { VSidebar } from "@/components";
+import { VSidebar, VNavbar } from "@/components";
 export default {
   components: {
     VSidebar,
+    VNavbar
   },
 };
 </script>
