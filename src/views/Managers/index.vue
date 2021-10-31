@@ -39,7 +39,7 @@
               vs-td
                 | {{ tr.status }}
               vs-td
-                
+                v-button 
 </template>
 
 <script>
