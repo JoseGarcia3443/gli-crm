@@ -1,23 +1,29 @@
 <template lang="pug">
 #app
-  transition(
-    mode="out-in",
-    enter-active-class="animate__animated animate__fadeIn",
-    leave-active-class="animate__animated animate__fadeOut"
-  )
-    router-view
+  v-sidebar
+  .content
+    .content__view
+      transition(
+        mode="out-in",
+        enter-active-class="animate__animated animate__fadeIn",
+        leave-active-class="animate__animated animate__fadeOut"
+      )
+        router-view
 </template>
 
 <script>
+import { VSidebar } from "@/components";
 export default {
-  components: {},
+  components: {
+    VSidebar,
+  },
 };
 </script>
 
 <style lang="scss">
 @import "./style/simple-grid/bootstrap-grid.css";
-@import "./style/inputForms.scss";
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Work+Sans:wght@200;300;400&display=swap");
+@import "./style/variables.scss";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Mulish:wght@700&family=Open+Sans:wght@400;600&family=Roboto:wght@400;500&display=swap");
 
 ::-webkit-scrollbar {
   display: none;
@@ -27,7 +33,31 @@ export default {
   min-height: 100vh;
   overflow-x: hidden;
   font-family: "Roboto", sans-serif;
-  // font-family: 'Work Sans', sans-serif;
+  .content {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    &__view {
+      width: 100%;
+      @media (min-width: 576px) {
+        width: 60%;
+      }
+      @media (min-width: 768px) {
+        width: 70%;
+      }
+      @media (min-width: 992px) {
+        width: 75%;
+      }
+      @media (min-width: 1200px) {
+        width: 80%;
+      }
+    }
+  }
+}
+
+ul {
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 .swal2-title {

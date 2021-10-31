@@ -1,0 +1,1 @@
+export { default as VSidebar } from '@/components/Sidebar.vue'

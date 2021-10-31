@@ -1,6 +1,6 @@
 <template lang="pug">
 .vp-landing
-	h1 GLI APP | Project
+  
 </template>
 
 <script>
@@ -9,5 +9,10 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss" scoped>
+.vp-landing {
+  width: 100%;
+  height: 100vh;
+  background-color: red;
+}
 </style>
