@@ -1,7 +1,8 @@
 <template lang="pug">
 #app
   v-sidebar
-  v-navbar
+  v-sidebar-menu-mobil(:visible="visible" @onClose="toggleNavbar")
+  v-navbar(@onClose="toggleNavbar")
   .content
     .content__view
       transition(
@@ -13,11 +14,20 @@
 </template>
 
 <script>
-import { VSidebar, VNavbar } from "@/components";
+import { VSidebar, VNavbar, VSidebarMenuMobil } from "@/components";
 export default {
   components: {
     VSidebar,
-    VNavbar
+    VNavbar,
+    VSidebarMenuMobil,
+  },
+  data: () => ({
+    visible: false,
+  }),
+  methods: {
+    toggleNavbar() {
+      this.visible = !this.visible;
+    },
   },
 };
 </script>
@@ -40,6 +50,7 @@ export default {
     justify-content: flex-end;
     width: 100%;
     &__view {
+      margin-top: 75px;
       width: 100%;
       @media (min-width: 576px) {
         width: 60%;

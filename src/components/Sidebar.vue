@@ -4,23 +4,24 @@
     .sidebar__wrapper--header
       logo
     .sidebar__wrapper--body
-      navigation-menu  
+      navigation-menu 
 </template>
 
 <script>
 import Logo from "@/components/aditionals/Logo.vue";
-import NavigationMenu from '@/components/navigation/Menu.vue';
+import NavigationMenu from "@/components/navigation/Menu.vue";
 export default {
   name: "Sidebar",
   components: {
     Logo,
-    NavigationMenu
+    NavigationMenu,
   },
 };
 </script>
 
 <style lang="scss" scoped>
 .sidebar__wrapper {
+  display: none;
   width: 100%;
   height: 100vh;
   background-color: var(--white);
@@ -29,9 +30,10 @@ export default {
   top: 0;
   left: 0;
   bottom: 0;
-  z-index: 10;
+  z-index: 11;
   @media (min-width: 576px) {
     width: 40%;
+    display: block;
   }
   @media (min-width: 768px) {
     width: 30%;

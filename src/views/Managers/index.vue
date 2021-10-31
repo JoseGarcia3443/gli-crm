@@ -1,17 +1,14 @@
 <template lang="pug">
 .vp-landing
-  
+  .container 
+    h1 Managers
 </template>
 
 <script>
 export default {
-  name: "Home"
+  name: "Managers",
 };
 </script>
 
-<style lang="scss" scoped>
-.vp-landing {
-  width: 100%;
-  height: 100vh;
-}
+<style>
 </style>

@@ -19,5 +19,6 @@ export default {
   display: flex;
   align-items: center;
   padding: 0 25px;
+  height: 100%;
 }
 </style>
