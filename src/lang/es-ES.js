@@ -14,5 +14,18 @@ export default {
     },
     "pages": {
         "MANAGERS": "Administradores de la consola"
+    },
+    "actions": {
+        "SEARCH": "Buscar",
+        "ADD_ADMIN": "Agregar nuevo admin",
+        "DOWNLOAD": "Descargar"
+    },
+    "managers": {
+        "MANAGERS": "Administradores",
+        "AREA": "Área",
+        "EMAIL": "Email",
+        "STATUS": "Estatus",
+        "DETAILS": "Detalles"
     }
+
 }
