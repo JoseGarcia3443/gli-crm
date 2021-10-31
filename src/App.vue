@@ -50,7 +50,7 @@ export default {
     justify-content: flex-end;
     width: 100%;
     &__view {
-      margin-top: 75px;
+      margin-top: 100px;
       width: 100%;
       @media (min-width: 576px) {
         width: 60%;

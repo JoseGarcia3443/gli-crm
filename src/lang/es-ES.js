@@ -1,5 +1,6 @@
 export default {
     "routes": {
+        "HOME": "Inicio",
         "MANAGERS": "Administradores",
         "CATALOGS": "Catálogos",
         "YOU_LEAD": "Lideres",
@@ -10,5 +11,8 @@ export default {
         "EVENTS": "Eventos",
         "NOTIFICATIONS": "Notificaciones",
         "REPORTS": "Reportes",
+    },
+    "pages": {
+        "MANAGERS": "Administradores de la consola"
     }
 }
